@@ -1,0 +1,43 @@
+
+
+
+<html>
+<head>
+	{% extends 'layout.html' %}
+	{% load static %}
+	<meta charset="utf-8">
+	<title>contact</title>
+	
+</head>
+<body>
+		<form method="post" action="contact" >
+		{% csrf_token %}
+   		<div class="row">
+   			   	<div class="input-group">
+   		           <input type="text" id="name" required>
+   		           <label for="name">Your Name </label>
+   	            </div>
+   	 	        <div class="input-group">
+   		          <input type="text" id="number" required>
+   		          <label for="number">Phone No. </label>
+   	</div>
+	   
+   		</div>
+		   
+   	 	<div class="input-group">
+		
+   		<input type="email" id="email" required>
+   		<label for="email">Email id </label>
+   	</div> 
+   	 	<div class="input-group">
+   		<textarea id="message" rows="8" required></textarea>
+   		<label for="message">Your Message</label>
+   	</div>
+   	<input type="submit" />
+   	</form>
+	 
+   </div>
+
+   
+</body>
+</html>
